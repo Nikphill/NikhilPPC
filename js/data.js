@@ -1,0 +1,21 @@
+const ROUTINE=[['Weekly','Review spend, CAC and ROAS against target (7-day trends, not single days)'],['Weekly','Compare platform conversions with CRM or backend numbers'],['Weekly','Review search terms (Google), placements and frequency (Meta), audience and engagement (LinkedIn)'],['Weekly','Pause clear losers; scale winners in 15–20% steps, 3–4 days apart'],['Weekly','Launch 1–2 new creative or ad concepts'],['Monthly','Update CPM, CTR and conversion rates in the Funnel with actuals'],['Monthly','Move 10–20% of budget toward the best incrementality-adjusted CAC'],['Monthly','Review lead quality with sales; update qualified and close rates in Goals'],['Monthly','Refresh audiences, exclusions and customer lists'],['Monthly','Review landing pages and run one A/B test'],['Quarterly','Run or refresh an incrementality test'],['Quarterly','Re-check LTV, margin and target CAC'],['Quarterly','Audit tracking, consent and conversion events']];
+const FIX=[
+['Google','Impressions fine, clicks low: ads not relevant to the search','CTR','Rewrite headlines around searcher intent, put the keyword in headline 1, add sitelinks and callouts, tighten match types and negatives.'],
+['Google','Clicks fine, few conversions: landing page or query mismatch','Click → lead rate','Match each ad group to a specific page, check speed and form length, review search terms, and verify conversion tracking.'],
+['Google','CPC rising or losing impression share to rank','CPC','Improve ad relevance, expected CTR and landing page experience; exclude low-value locations, devices and audiences.'],
+['Google','Smart Bidding under-delivers after setting a target','ROAS / CAC','Target is too aggressive: loosen it 10–20% and wait 1–2 weeks. Check conversion volume and lag.'],
+['Google','Performance Max spends on brand or low-value traffic','ROAS','Add brand exclusions and negatives, split asset groups by theme, clean the feed, compare against standard Search.'],
+['Google','Leads are cheap but junk','Quality','Import qualified or closed-won conversions and optimise to them; add qualifying form fields.'],
+['Meta','High CPM and rising frequency: saturation or fatigue','CPM','Broaden the audience, refresh creative, check overlap with retargeting, consolidate ad sets.'],
+['Meta','Low CTR: creative fatigue or weak hook','CTR','Test genuinely new concepts, not tweaks: stronger first 3 seconds, UGC-style content, clear benefit and CTA.'],
+['Meta','High CTR but low conversion: mismatch or slow page','Click → lead rate','Align promise and page, shorten the form, test instant form vs landing page, check Pixel and Conversions API events.'],
+['Meta','Learning limited or unstable delivery','Delivery','Too many ad sets for the volume: consolidate, optimise for a higher-volume event, avoid frequent edits.'],
+['Meta','Platform ROAS high but business revenue flat','ROAS','Run a lift test or geo holdout and apply the incrementality factor from the Incrementality tab.'],
+['Meta','Leads are low quality','Quality','Send qualified-lead events back, add qualifying questions, exclude existing customers.'],
+['LinkedIn','CPC or CPL very high: narrow or competitive audience','CPC','Widen the audience slightly (keep it large enough to deliver), test document or Thought Leader ads, try a cost cap once you have a benchmark.'],
+['LinkedIn','Low CTR or engagement: generic message','CTR','Lead with an insight or customer proof, shorten copy, test document and carousel formats.'],
+['LinkedIn','Lead gen form completion low','Click → lead rate','Fewer fields, prefilled data, a clearer offer; compare form vs landing page.'],
+['LinkedIn','Leads are not qualified','Quality','Sync forms to the CRM, add a qualifying question, use account lists, add seniority or industry exclusions.'],
+['General','Platform conversions exceed CRM numbers','Tracking','Deduplicate pixel and server events, check attribution windows and consent settings, reconcile weekly.'],
+['General','Results swing wildly week to week','Volatility','Optimise to a higher-funnel event, judge over 7–14 days, do not react to one or two days.'],
+['General','Scaling spend destroys efficiency','CAC','Scale in 15–20% steps, add creative before budget, watch marginal CAC, not just the average.']];
